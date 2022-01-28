@@ -2,9 +2,18 @@
 /* EXERCISE 1
  Write a function called "area" which receives 2 parameters (l1, l2) and calculates the area of the associated rectangle.
 */
+let n1 = 2
+let n2 = 5
+let area  
+function Area(l1,l2) {
 
+    let result = l1*l2
+    return result
+}
 
-/* WRITE YOUR ANSWER HERE */
+area = Area(n1,n2) 
+console.log(area)
+
 
 /* EXERCISE 2
  Write a function called "crazySum" which receives two integers as parameters.

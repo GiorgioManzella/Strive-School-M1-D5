@@ -58,12 +58,27 @@ console.log(crazyDiff(n1,n2))
 
 
 
-
 /* EXERCISE 4
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
 */
 
-/* WRITE YOUR ANSWER HERE */
+console.log(`--------------EX-4---------------`)
+
+n1= 45
+
+function boundary(n){
+    let result
+    if ((n >= 20 && n <= 100) || n === 400){
+        result = true    
+    } else{
+        result = false
+        
+    }
+    return result
+
+}
+
+console.log(boundary(n1))
 
 /* EXERCISE 5
  Write a function called "strivify" which accepts a string as a parameter.

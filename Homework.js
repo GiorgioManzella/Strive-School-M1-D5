@@ -185,6 +185,18 @@ console.log(upperFirst('strive la casa'))
 */
 print('EX-9')
 
+let palabra = "I don't care"
+
+function cutString(w) {
+    //let result = (palabra.split('').reverse().slice(1).join('')).split('').reverse().slice(1).join('')
+    //let result = (palabra.split('').slice(1).reverse().slice(1).reverse().join(''))
+    let result = palabra.slice(1).split('').reverse().slice(1).reverse().join('')
+    //result = result.split('').reverse().slice(1).join('')
+    return result 
+}
+console.log(cutString(palabra))
+//return i.split('').reverse().join('')
+
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.

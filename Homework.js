@@ -108,14 +108,43 @@ console.log(strivify(w))
  Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
  HINT: Modulus Operator
 */
+console.log(`--------------EX-6---------------`)
 
-/* WRITE YOUR ANSWER HERE */
+n1 = -5
+
+
+function check3and7(l1) {
+    let result
+    if (l1 >= 0) {
+        if ((l1 % 3) === 0){
+            result = true
+        } else if ((l1 % 7)===0) {
+            result = true
+        }else {
+            result = false
+        }
+    }else {
+        result = false
+    }
+    return result
+}
+
+console.log(check3and7(n1))
+
 
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
 */
 
-/* WRITE YOUR ANSWER HERE */
+console.log(`--------------EX-7---------------`)
+
+let word='Strive'
+
+function reverseString (i){
+    
+}
+
+
 
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.

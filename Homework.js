@@ -1,4 +1,9 @@
 
+function print(text) {
+    return (console.log(`------------------${text}----------------`))
+
+}
+
 /* EXERCISE 1
  Write a function called "area" which receives 2 parameters (l1, l2) and calculates the area of the associated rectangle.
 */
@@ -110,12 +115,13 @@ console.log(strivify(w))
 */
 console.log(`--------------EX-6---------------`)
 
-n1 = -5
+n1 = 7
 
 
 function check3and7(l1) {
     let result
-    if (l1 >= 0) {
+    result = ((l1 >=0)) ? ((((l1 % 3 )=== 0 ) || ((l1 % 7) === 0)) ? true : false) : false  // ternary operator (ternary operator)
+    /*if (l1 >= 0) {
         if ((l1 % 3) === 0){
             result = true
         } else if ((l1 % 7)===0) {
@@ -126,6 +132,7 @@ function check3and7(l1) {
     }else {
         result = false
     }
+     */
     return result
 }
 
@@ -141,28 +148,49 @@ console.log(`--------------EX-7---------------`)
 let word='Strive'
 
 function reverseString (i){
+
+    return i.split('').reverse().join('')
     
 }
-
+console.log(reverseString("strive"))
 
 
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
+console.log(`--------------EX-8---------------`)
 
-/* WRITE YOUR ANSWER HERE */
+
+function upperFirst(i) {
+
+    var arrayString = i.split(" ")
+    let result = ""   
+     for(let p = 0; p < arrayString.length; p++) {
+        arrayString[p] = arrayString[p].charAt(0).toUpperCase() + arrayString[p].slice(1)
+        result += arrayString[p] + ' ' 
+
+
+     }   // p++ === (p = p + 1) === (p += 1)
+      //result = arrayString[0] + " " + arrayString[1]
+    return result
+}
+
+console.log(upperFirst('strive la casa'))
+
+
+
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
+print('EX-9')
 
-/* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-/* WRITE YOUR ANSWER HERE */
+
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.

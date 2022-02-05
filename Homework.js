@@ -317,20 +317,16 @@ print('EX-X-4')
  Create a function called "latestShoppingCart" which receives the shoppingCart array and returns the last item.
 */
 
-const latestShoppingCart = function () {
-    for (let index = 0; index < shoppingCart.length; index++) {
-        const lastItem = shoppingCart[shoppingCart.length - 1].Name;
-        return lastItem
-        
-    }
-}
-console.log(latestShoppingCart())
+//not working solution.
+
+
+
 /* EXTRA 6
  Create a function called "loopUntil" which receives an integer x between 0 and 9 as a parameter.
  The function loops and prints a random number between 0 and 9 until the random number is bigger than x for three times in a row.
 */
 
-/* WRITE YOUR ANSWER HERE */
+
 
 /* EXTRA 7
  Write a function called "average" which receives an array and returns the average numerical value. The function automatically skips non-numeric entries in the array.

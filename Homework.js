@@ -215,3 +215,158 @@ console.log(giveMeRandom(n))
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
 */
+
+/* EXTRA 1
+ Write a function called "checkArray" which receives an array of random numbers (created with giveMeRandom) and prints, for each item, whether it's bigger than 5 or not.
+ The function should return the sum of just the numbers bigger than 5.
+*/
+print('EX-X-1')
+let t = giveMeRandom()
+let arrayRandom = [,,,,,]
+for (i=0; i<arrayRandom.length;i++) {
+    arrayRandom[i] = giveMeRandom()
+}
+ console.log(arrayRandom)   
+
+function checkArray() { 
+    let sum = 0
+    for (i=0; i< arrayRandom.length; i++) {
+        if (arrayRandom[i] > 5) {
+            sum += arrayRandom[i]
+        } 
+    }
+    return sum
+}
+console.log(checkArray())
+/* EXTRA 2
+ In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
+ Create a function called "shoppingCartTotal" which calculates the total due to the shop.
+*/
+
+print('EX-X-2')
+
+let shoppingCart = [
+    {
+        price: 31,
+        Name: 'bag',
+        Promise: 6,
+        quantity: 5,
+    },
+    {
+        price: 39,
+        Name: 'bag',
+        prie: 7,
+        quantity: 5,
+
+    },
+    {
+        price: 35,
+        Name: 'bag',
+        prce: 5,
+        quantity: 5,
+    }
+]
+
+let shoppingCartTotal = function(){
+
+    total = 0
+    for (i=0; i < shoppingCart.length; i++){
+        total = total + shoppingCart[i].price * shoppingCart[i].quantity;
+    }
+    return total;
+};
+console.log(shoppingCartTotal())
+
+/* EXTRA 3
+ In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
+ Create a function called "addToShoppingCart" which receives a new object, adds it to shoppingCart and returns the total number of items in the shoppingCart.
+*/
+
+print('EX-X-3')
+let newItem = {
+    id: 24,
+    price: 30,
+    quantity:2,
+    name:'borsa',
+}
+
+const addToShoppingCart = function (itemToAdd) {     
+    let newLenght = shoppingCart.push(itemToAdd)
+    return newLenght
+}
+console.log(addToShoppingCart())
+
+/* EXTRA 4
+ In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
+ Create a function called "maxShoppingCart" which receives the shoppingCart array and returns the most expensive item in it.
+*/
+print('EX-X-4')
+/*const maxShoppingCart = function (){
+    let mostexpensive = shoppingCart[0]
+    for (let index = 0; index < shoppingCart.length; index++) {
+        if (shoppingCart[index].price > mostexpensive.price) {
+            
+        }}
+        return content
+        
+    }
+*/
+
+/* EXTRA 5
+ In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
+ Create a function called "latestShoppingCart" which receives the shoppingCart array and returns the last item.
+*/
+
+const latestShoppingCart = function () {
+    for (let index = 0; index < shoppingCart.length; index++) {
+        const lastItem = shoppingCart[shoppingCart.length - 1].Name;
+        return lastItem
+        
+    }
+}
+console.log(latestShoppingCart())
+/* EXTRA 6
+ Create a function called "loopUntil" which receives an integer x between 0 and 9 as a parameter.
+ The function loops and prints a random number between 0 and 9 until the random number is bigger than x for three times in a row.
+*/
+
+/* WRITE YOUR ANSWER HERE */
+
+/* EXTRA 7
+ Write a function called "average" which receives an array and returns the average numerical value. The function automatically skips non-numeric entries in the array.
+*/
+
+/* WRITE YOUR ANSWER HERE */
+
+/* EXTRA 8
+ Write a function called "longest" to find the longest string from a given array of strings.
+*/
+
+/* WRITE YOUR ANSWER HERE */
+
+/* EXTRA 9
+ Write a function to create a very simple anti spam filter for your mailbox. The function takes a string emailContent, and returns a boolean.
+ The function should return true if the emailContent string does not contain the words SPAM or SCAM.
+*/
+
+/* WRITE YOUR ANSWER HERE */
+
+/* EXTRA 10
+ Write a function that receives a date as a parameter and calculates the number of days passed since the given date.
+*/
+
+/* WRITE YOUR ANSWER HERE */
+
+/* EXTRA 11
+ Write a function called "matrixGenerator" which receives two integers, x and y, as parameters.
+ The result should be a matrix of x times y with, as value, the index of the position.
+ Ex.: x = 3, y = 2
+ ["00","01","02"
+ "10","11","12"]
+*/
+
+/* WRITE YOUR ANSWER HERE */
+
+/* WHEN YOU ARE FINISHED
+ Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
+*/
